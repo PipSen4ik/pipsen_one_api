@@ -1,0 +1,42 @@
+<html>
+  <body style="font-family: 'Courier New', monospace; background-color: #1e1e1e; color: #d4d4d4; margin: 0; padding: 20px;">
+    <div style="max-width: 700px; margin: auto; border: 1px solid #3a3a3a; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+      <!-- Шапка -->
+      <div style="background: #000000; padding: 15px; text-align: center; border-bottom: 2px solid #005fcf;">
+        <a href="{{ website_url }}" target="_blank"
+           style="display: inline-block; text-decoration: none; line-height: 0; vertical-align: top;">
+          <img src="cid:logo"
+               alt="DevPortfolio MG"
+               style="height: 40px; width: auto; display: block; margin: 0; padding: 0;" />
+        </a>
+        <h2 style="color: #005fcf; margin: 10px 0 0; font-size: 1.4em;">
+          📬 Новое сообщение
+        </h2>
+      </div>
+      <!-- Основное содержимое -->
+      <div style="padding: 20px; line-height: 1.8;">
+        <p><strong style="color: #005fcf;">👤 От кого:</strong>
+          <code style="background: #2d2d2d; padding: 2px 6px; border-radius: 4px; color: #fff;">{{ name }}</code>
+        </p>
+        <p><strong style="color: #005fcf;">✉️ Email:</strong>
+          <a href="mailto:{{ email }}" style="color: #4ec9b0; text-decoration: underline;">{{ email }}</a>
+        </p>
+        <p><strong style="color: #005fcf;">💬 Сообщение:</strong></p>
+        <pre style="background: #252526; padding: 15px; border-radius: 6px; border-left: 4px solid #005fcf; overflow-x: auto; white-space: pre-wrap; font-size: 0.95em; color: #dcdcdc;">
+{{ message }}
+        </pre>
+      </div>
+      <!-- Подвал -->
+      <div style="background: #252526; padding: 15px; text-align: center; font-size: 0.85em; color: #888; border-top: 1px solid #3a3a3a;">
+        <p style="margin: 0;">
+          📩 Отправлено через
+          <strong style="color: #005fcf;">
+            <a href="{{ website_url }}" target="_blank" style="color: #005fcf; text-decoration: none;">
+              DevPortfolio MG
+            </a>
+          </strong> — безопасная форма связи
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
